@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int T;
+    cout<<"Enter the number of test cases : ";
+    cin>>T;
+    while(T--){
+        int n;
+        cout<<"Enter the value of n : ";
+        cin>>n;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-i-1;j++){
+                cout<<" ";
+            }
+            for(int k=0;k<=i;k++){
+                cout<<"*";
+            }
+            for(int l=0;l<i;l++){
+                cout<<"*";
+            }
+            cout<<endl;
+        }
+    }
+}
+/*
+Enter the value of n : 5
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+*/
